@@ -1,1 +1,19 @@
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= locals.title %></title>
+  </head>
+  <body>
+    <h1><%= locals.title %></h1>
+    <% locals.messages.map(messages => { %>
+      <div>
+        <p><%= messages.text %></p>
+        <p><%= messages.user %></p>
+        <p><%= messages.added %></p>
+      </div>
+    <% }); %>
+    <a href="/new">Submit Message</a>
+  </body>
+</html>
