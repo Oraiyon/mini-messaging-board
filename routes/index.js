@@ -8,6 +8,11 @@ const messages = [
     text: "Woof",
     user: "Thor",
     added: new Date()
+  },
+  {
+    text: "Arf",
+    user: "Bailey",
+    added: new Date()
   }
 ];
 
